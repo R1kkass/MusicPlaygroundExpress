@@ -28,14 +28,16 @@ const music = {
 
     return res.json({ message: imgs });
   },
-  
+
   addGenre: async ({ input }) => {
     const genre = await Genre.create({ genre: input?.genre || "" });
     return genre;
   },
 
   getAllMusic: async ({ input }) => {
-    const music = await Music.findAll({ where: { name: input?.name || "" } });
+    const music = await Music.findAll({
+      where: { [Op.or]: [{ name: input.name }, { author: input.name }] },
+    });
     return music;
   },
   getAllGenre: async () => {
