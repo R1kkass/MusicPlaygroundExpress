@@ -1,0 +1,4 @@
+/node_modules
+/.pnp
+/static
+.pnp.js
