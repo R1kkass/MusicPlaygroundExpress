@@ -22,6 +22,6 @@ const MUSIC_ADD = `
     input GenreInput{
         genre: String
     }
-`
+`;
 
-module.exports={MUSIC_ADD}
+module.exports = { MUSIC_ADD };

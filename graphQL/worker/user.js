@@ -28,7 +28,8 @@ const user = {
         userLogin.id,
         userLogin.email,
         userLogin.role,
-        userLogin.user
+        userLogin.user,
+        userLogin.user,
       );
       return { token: token };
     }
