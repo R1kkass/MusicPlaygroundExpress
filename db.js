@@ -3,7 +3,7 @@ const {Sequelize} = require('sequelize')
 module.exports = new Sequelize(
     'FilmsMarket',
     'postgres',
-    "25122004",
+    "000",
     {
         dialect: 'postgres',
         host: 'localhost',
